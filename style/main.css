@@ -195,6 +195,10 @@
   background: #0f0f0f;
 }
 
+.client .wrapper {
+  text-align: center;
+}
+
 .client__list {
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
@@ -210,6 +214,110 @@
   color: rgba(255, 255, 255, 0.302);
   font-weight: bold;
   line-height: 1.933;
+}
+
+.testimonials {
+  background: url(./../res/img/quote-bg.png) no-repeat;
+}
+
+.testimonials__quote {
+  margin: 0;
+  font-size: 36px;
+  font-family: "NunitoSans", sans-serif;
+  color: white;
+  line-height: 1.667;
+  text-align: center;
+  position: relative;
+  padding-top: 100px;
+}
+
+.testimonials__quote::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+          transform: translateX(-50%);
+  background: url(./../res/img/quote.png) no-repeat;
+  width: 45px;
+  height: 30px;
+}
+
+.testimonials__name {
+  text-align: center;
+  font-size: 15px;
+  font-family: "NunitoSans", sans-serif;
+  color: #5e3080;
+  text-transform: uppercase;
+  line-height: 2.002;
+  -webkit-transform: matrix(1.0, 0, 0, 1.00081, 0, 0);
+  transform: matrix(1.0, 0, 0, 1.00081, 0, 0);
+}
+
+.testimonials__position {
+  text-align: center;
+  font-size: 15px;
+  font-family: "NunitoSans", sans-serif;
+  color: rgba(153, 153, 153, 0.502);
+  line-height: 2;
+  -webkit-transform: matrix(1.0, 0, 0, 1.00081, 0, 0);
+  transform: matrix(1.0, 0, 0, 1.00081, 0, 0);
+  margin: 0;
+}
+
+.contact {
+  background-color: #5e3080;
+}
+
+.contact__title {
+  margin: 0;
+  font-size: 18px;
+  font-family: "Montserrat", sans-serif;
+  color: #2a1538;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.333;
+  text-align: center;
+  -webkit-transform: matrix(0.9998, 0, 0, 1.0, 0, 0);
+  transform: matrix(0.9998, 0, 0, 1.0, 0, 0);
+}
+
+.contact__desc {
+  margin: 0;
+  font-size: 46px;
+  font-family: "Montserrat", sans-serif;
+  color: white;
+  font-weight: bold;
+  line-height: 1.5;
+  text-align: center;
+  -webkit-transform: matrix(0.9998, 0, 0, 1.0, 0, 0);
+  transform: matrix(0.9998, 0, 0, 1.0, 0, 0);
+}
+
+.contact__mail {
+  font-size: 90px;
+  font-family: "NunitoSans", sans-serif;
+  color: white;
+  font-weight: bold;
+  line-height: 1;
+  text-align: center;
+  text-decoration: none;
+}
+
+.contact__addr {
+  font-size: 33px;
+  font-family: "NunitoSans", sans-serif;
+  color: rgba(255, 255, 255, 0.631);
+  line-height: 1.636;
+  text-align: center;
+}
+
+.contact__tel {
+  font-size: 33px;
+  font-family: "NunitoSans", sans-serif;
+  color: rgba(255, 255, 255, 0.631);
+  line-height: 1.636;
+  text-align: center;
 }
 
 .common__title {
