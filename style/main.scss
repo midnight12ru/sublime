@@ -91,6 +91,97 @@
 .about {
     background: #121212;
 
+    &__coll {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.services {
+    background: #0f0f0f;
+
+    &__coll {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+}
+
+.works {
+    background-color: #121212;
+    background: url(./../res/img/works-bg.png) no-repeat left center;
+    background-size: cover;
+}
+
+.gallery {
+    column-count: 2;
+    column-gap: 0;
+
+    &__item {
+        position: relative;
+        overflow: hidden;
+
+        &:hover .gallery__content {
+            transition: .3s all;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background: rgba(0, 0, 0, .5);
+            color: #fff;
+        }
+
+    }
+
+    &__img {
+        width: 100%;
+        display: block;
+    }
+
+    &__content {
+        align-items: baseline;
+        position: absolute;
+        padding: 0 24px 24px;
+        box-sizing: border-box;
+    }
+
+    &__name,
+    &__subname {
+        margin: 0;
+    }
+
+    &__link {
+        background: url(./../res/img/card-link.png) no-repeat center;
+        display: block;
+        width: 44px;
+        height: 76px;
+    }
+
+    &__desc {
+        flex: 1;
+        display: flex;
+        align-items: center;
+        width: 100%;
+        justify-content: center;
+    }
+}
+
+.client {
+    background: #0f0f0f;
+
+    &__list{
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    span {
+        font-size: 45px;
+        font-family: "NunitoSans", sans-serif;
+        color: rgba(255, 255, 255, 0.302);
+        font-weight: bold;
+        line-height: 1.933;
+    }
+}
+
+.common {
     &__title {
         font-size: 18px;
         font-family: "Montserrat", sans-serif;
@@ -115,10 +206,7 @@
         line-height: 1.625;
     }
 
-    &__coll {
-        flex-direction: row;
-        flex-wrap: wrap;
-
+    &__card {
         &_item {
             width: 45%;
         }
