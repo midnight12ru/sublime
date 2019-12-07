@@ -1,6 +1,10 @@
+@import './var/fonts';
+
 .dn {
     display: none;
 }
+
+
 
 .wrapper {
     width: 100%;
@@ -16,29 +20,62 @@
 }
 
 .header {
-    max-height: 883px;
+    max-height: 882px;
     height: 55.18vw;
     background: url(./../res/img/hero-bg-img.png) no-repeat center, url(./../res/img/hero-bg-img.png) no-repeat center;
     background-size: cover;
+    position: relative;
+
+    &__top {
+        flex-direction: row;
+        justify-content: space-between;
+        padding: 0 91px 0 76px;
+        height: 107px;
+        position: absolute;
+        width: 100%;
+    }
+
+    &__logo {
+        background: url(./../res/img/logo.png) no-repeat;
+        background-size: cover;
+        width: 153px;
+        height: 36px;
+    }
+
+    &__menu-icon {
+        width: 26px;
+        height: 20px;
+        transform: translateY(20px);
+
+        span {
+            width: 100%;
+            height: 2px;
+            background: #fff;
+        }
+    }
+
+    .wrapper {
+        height: 100%;
+        justify-content: flex-end;
+    }
 
     &__title {
-        font-size: 170px;
-        font-family: "Montserrat", sans-serif;
+        @include Font_set(900, 170px, 1, "Montserrat-bold", #fff);
         text-transform: capitalize;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        line-height: 0.282;
         text-align: center;
+        letter-spacing: -3.1px;
+        margin: 0 0 14px 0;
     }
 
     &__subtitle {
-        font-size: 37px;
-        font-family: "NunitoSans", sans-serif;
-        color: rgb(156, 156, 156);
-        line-height: 1.297;
+        @include Font_set(100, 37px, 1.297, "NunitoSans-light", #9c9c9c);
+        margin: 0 0 60px 0;
+        padding-left: 9px;
     }
 
     &__video {
+        margin-bottom: 71px;
+        text-align: center;
         &_btn {
             border-radius: 50%;
             background-color: rgb(121, 62, 165);
@@ -59,31 +96,30 @@
         }
 
         &_text {
-            font-size: 14px;
-            font-family: "NunitoSans", sans-serif;
-            color: rgb(156, 156, 156);
-            font-weight: bold;
+            @include Font_set(900, 14px, 17px, "NunitoSans-bold", #9c9c9c);
+            letter-spacing: 4px;
             text-transform: uppercase;
-            line-height: 1.2;
         }
     }
 
-    &__btn>button {
-        padding: 0;
-        border: none;
-        outline: none;
-        background-color: rgb(19, 22, 27);
-        width: 300px;
-        height: 72px;
-        font-size: 12px;
-        font-family: "NunitoSans", sans-serif;
-        font-weight: bold;
-        text-transform: uppercase;
-        color: rgb(255, 255, 255);
+    &__btn {
+        margin-bottom: 85px;
 
-        &:hover {
-            background-color: rgb(121, 62, 165);
+        button {
+            padding: 0;
+            border: none;
+            outline: none;
+            background-color: rgb(19, 22, 27);
+            width: 298px;
+            height: 72px;
 
+            @include Font_set(900, 12px, initial, "NunitoSans-bold", #fff);
+            text-transform: uppercase;
+
+            &:hover {
+                background-color: rgb(121, 62, 165);
+
+            }
         }
     }
 }
@@ -121,7 +157,6 @@
         overflow: hidden;
 
         &:hover .gallery__content {
-            transition: .3s all;
             top: 0;
             width: 100%;
             height: 100%;
@@ -141,6 +176,7 @@
         position: absolute;
         padding: 0 24px 24px;
         box-sizing: border-box;
+        transition: .3s all;
     }
 
     &__name,
@@ -153,6 +189,7 @@
         display: block;
         width: 44px;
         height: 76px;
+        border-radius: 0 0 22px 22px;
     }
 
     &__desc {
@@ -187,6 +224,7 @@
 
 .testimonials {
     background: url(./../res/img/quote-bg.png) no-repeat;
+    background-size: cover;
 
     &__quote {
         margin: 0;

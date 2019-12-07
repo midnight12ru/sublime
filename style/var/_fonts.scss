@@ -1,0 +1,20 @@
+@mixin Font_set($fw, $size, $lh, $fn, $color: initial) {
+    font: $fw $size $fn, sans-serif;
+    line-height: $lh;
+    color: $color;
+}
+
+@font-face {
+    font-family: 'NunitoSans-light';
+    src: url(./../../res/fonts/Nunito_Sans/NunitoSans-Light.ttf);
+}
+
+@font-face {
+    font-family: 'NunitoSans-bold';
+    src: url(./../../res/fonts/Nunito_Sans/NunitoSans-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-bold';
+    src: url(./../../res/fonts/Montserrat/Montserrat-Bold.ttf);
+}

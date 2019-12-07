@@ -1,3 +1,18 @@
+@font-face {
+  font-family: 'NunitoSans-light';
+  src: url(./../../res/fonts/Nunito_Sans/NunitoSans-Light.ttf);
+}
+
+@font-face {
+  font-family: 'NunitoSans-bold';
+  src: url(./../../res/fonts/Nunito_Sans/NunitoSans-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat-bold';
+  src: url(./../../res/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
 .dn {
   display: none;
 }
@@ -25,27 +40,75 @@
 }
 
 .header {
-  max-height: 883px;
+  max-height: 882px;
   height: 55.18vw;
   background: url(./../res/img/hero-bg-img.png) no-repeat center, url(./../res/img/hero-bg-img.png) no-repeat center;
   background-size: cover;
+  position: relative;
+}
+
+.header__top {
+  -webkit-box-orient: horizontal;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: row;
+          flex-direction: row;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  padding: 0 91px 0 76px;
+  height: 107px;
+  position: absolute;
+  width: 100%;
+}
+
+.header__logo {
+  background: url(./../res/img/logo.png) no-repeat;
+  background-size: cover;
+  width: 153px;
+  height: 36px;
+}
+
+.header__menu-icon {
+  width: 26px;
+  height: 20px;
+  -webkit-transform: translateY(20px);
+          transform: translateY(20px);
+}
+
+.header__menu-icon span {
+  width: 100%;
+  height: 2px;
+  background: #fff;
+}
+
+.header .wrapper {
+  height: 100%;
+  -webkit-box-pack: end;
+      -ms-flex-pack: end;
+          justify-content: flex-end;
 }
 
 .header__title {
-  font-size: 170px;
-  font-family: "Montserrat", sans-serif;
+  font: 900 170px "Montserrat-bold", sans-serif;
+  line-height: 1;
+  color: #fff;
   text-transform: capitalize;
-  color: white;
-  font-weight: bold;
-  line-height: 0.282;
   text-align: center;
+  letter-spacing: -3.1px;
+  margin: 0 0 14px 0;
 }
 
 .header__subtitle {
-  font-size: 37px;
-  font-family: "NunitoSans", sans-serif;
-  color: #9c9c9c;
+  font: 100 37px "NunitoSans-light", sans-serif;
   line-height: 1.297;
+  color: #9c9c9c;
+  margin: 0 0 60px 0;
+  padding-left: 9px;
+}
+
+.header__video {
+  margin-bottom: 71px;
+  text-align: center;
 }
 
 .header__video_btn {
@@ -69,29 +132,31 @@
 }
 
 .header__video_text {
-  font-size: 14px;
-  font-family: "NunitoSans", sans-serif;
+  font: 900 14px "NunitoSans-bold", sans-serif;
+  line-height: 17px;
   color: #9c9c9c;
-  font-weight: bold;
+  letter-spacing: 4px;
   text-transform: uppercase;
-  line-height: 1.2;
 }
 
-.header__btn > button {
+.header__btn {
+  margin-bottom: 85px;
+}
+
+.header__btn button {
   padding: 0;
   border: none;
   outline: none;
   background-color: #13161b;
-  width: 300px;
+  width: 298px;
   height: 72px;
-  font-size: 12px;
-  font-family: "NunitoSans", sans-serif;
-  font-weight: bold;
+  font: 900 12px "NunitoSans-bold", sans-serif;
+  line-height: initial;
+  color: #fff;
   text-transform: uppercase;
-  color: white;
 }
 
-.header__btn > button:hover {
+.header__btn button:hover {
   background-color: #793ea5;
 }
 
@@ -140,8 +205,6 @@
 }
 
 .gallery__item:hover .gallery__content {
-  -webkit-transition: .3s all;
-  transition: .3s all;
   top: 0;
   width: 100%;
   height: 100%;
@@ -162,6 +225,8 @@
   padding: 0 24px 24px;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
+  -webkit-transition: .3s all;
+  transition: .3s all;
 }
 
 .gallery__name, .gallery__subname {
@@ -173,6 +238,7 @@
   display: block;
   width: 44px;
   height: 76px;
+  border-radius: 0 0 22px 22px;
 }
 
 .gallery__desc {
@@ -218,6 +284,7 @@
 
 .testimonials {
   background: url(./../res/img/quote-bg.png) no-repeat;
+  background-size: cover;
 }
 
 .testimonials__quote {
