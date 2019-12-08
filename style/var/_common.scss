@@ -1,0 +1,31 @@
+.common {
+    &__title {
+        @include Font_set(18px, 1.333, 'Montserrat-SemiBold', #793ea5);
+        letter-spacing: 2.6px;
+        text-transform: uppercase;
+        margin: 0;
+    }
+
+    &__desc {
+        @include Font_set(46px, 1.5, 'Montserrat-SemiBold', #fff);
+        letter-spacing: -0.23px;
+    }
+
+    &__subdesc {
+        @include Font_set(24px, 1.625, 'NunitoSans-light', #ffffff33);
+    }
+
+    &__card {
+        &_item {
+            width: 47.3%;
+        }
+
+        &_title {
+            @include Font_set(24px, 0.75, 'Montserrat-SemiBold', #fff)
+        }
+
+        &_desc {
+            @include Font_set(17px, 1.95, 'NunitoSans', #ffffff66);
+        }
+    }
+}

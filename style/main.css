@@ -4,13 +4,71 @@
 }
 
 @font-face {
+  font-family: 'NunitoSans';
+  src: url(./../../res/fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+}
+
+@font-face {
   font-family: 'NunitoSans-bold';
   src: url(./../../res/fonts/Nunito_Sans/NunitoSans-Bold.ttf);
 }
 
 @font-face {
+  font-family: 'Montserrat-Medium';
+  src: url(./../../res/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
   font-family: 'Montserrat-bold';
   src: url(./../../res/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+  font-family: 'Montserrat-SemiBold';
+  src: url(./../../res/fonts/Montserrat/Montserrat-SemiBold.ttf);
+}
+
+.common__title {
+  font: 18px "Montserrat-SemiBold", sans-serif;
+  line-height: 1.333;
+  color: #793ea5;
+  font-weight: 600;
+  letter-spacing: 2.6px;
+  text-transform: uppercase;
+  margin: 0;
+}
+
+.common__desc {
+  font: 46px "Montserrat-SemiBold", sans-serif;
+  line-height: 1.5;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: -0.23px;
+}
+
+.common__subdesc {
+  font: 24px "NunitoSans-light", sans-serif;
+  line-height: 1.625;
+  color: #ffffff33;
+  font-weight: 100;
+}
+
+.common__card_item {
+  width: 47.3%;
+}
+
+.common__card_title {
+  font: 24px "Montserrat-SemiBold", sans-serif;
+  line-height: 0.75;
+  color: #fff;
+  font-weight: 600;
+}
+
+.common__card_desc {
+  font: 17px "NunitoSans", sans-serif;
+  line-height: 1.95;
+  color: #ffffff66;
+  font-weight: 400;
 }
 
 .dn {
@@ -19,8 +77,9 @@
 
 .wrapper {
   width: 100%;
-  max-width: 1100px;
+  max-width: 1080px;
   margin: 0 auto;
+  padding: 0 10px;
 }
 
 .f-wrap {
@@ -45,6 +104,7 @@
   background: url(./../res/img/hero-bg-img.png) no-repeat center, url(./../res/img/hero-bg-img.png) no-repeat center;
   background-size: cover;
   position: relative;
+  background-attachment: fixed;
 }
 
 .header__top {
@@ -167,17 +227,109 @@
   background-color: #793ea5;
 }
 
+.header__scroll {
+  font: 12px "Montserrat-Medium", sans-serif;
+  line-height: 2;
+  color: #fff;
+  font-weight: 500;
+  position: absolute;
+  bottom: 75px;
+  right: 61px;
+  color: #fff;
+  -webkit-transform: rotate(-90deg);
+          transform: rotate(-90deg);
+  text-transform: uppercase;
+  -webkit-transform: matrix(0, -1, 1, 0, 0, 0);
+  transform: matrix(0, -1, 1, 0, 0, 0);
+  letter-spacing: 2.9px;
+}
+
+.header__soc-icon {
+  position: absolute;
+  left: 46px;
+  bottom: 15px;
+}
+
+.header__soc-icon .header__soc-icon_item:nth-child(1) .link {
+  background-position-y: -0px;
+}
+
+.header__soc-icon .header__soc-icon_item:nth-child(2) .link {
+  background-position-y: -41.5px;
+}
+
+.header__soc-icon .header__soc-icon_item:nth-child(3) .link {
+  background-position-y: -83px;
+}
+
+.header__soc-icon .header__soc-icon_item:nth-child(4) .link {
+  background-position-y: -124.5px;
+}
+
+.header__soc-icon .header__soc-icon_item:nth-child(5) .link {
+  background-position-y: -166px;
+}
+
+.header__soc-icon_item {
+  margin: 22px 0;
+  list-style: none;
+}
+
+.header__soc-icon .link {
+  display: block;
+  background: url(./../res/img/soc-icon.png) no-repeat;
+  width: 19px;
+  height: 19px;
+}
+
 .about {
   background: #121212;
 }
 
+.about .wrapper {
+  padding: 181px 10px;
+}
+
+.about__title {
+  text-transform: uppercase;
+}
+
+.about__desc {
+  margin-top: 30px;
+}
+
 .about__coll {
+  margin-top: 80px;
   -webkit-box-orient: horizontal;
   -webkit-box-direction: normal;
       -ms-flex-direction: row;
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+}
+
+.about__coll_item {
+  margin-bottom: 18px;
+}
+
+.about__coll_title {
+  position: relative;
+  padding-left: 70px;
+}
+
+.about__coll_title::before {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  left: 0;
+  top: -14px;
+  background: #662d91;
+  text-align: center;
+  font: 21px "Montserrat-bold", sans-serif;
+  line-height: 48px;
+  color: #fff;
+  font-weight: 900;
 }
 
 .about__coll:nth-child(1) {
@@ -200,24 +352,17 @@
   content: "4";
 }
 
-.about__coll_title {
-  position: relative;
-  padding-left: 72px;
-}
-
-.about__coll_title::before {
-  position: absolute;
-  width: 48px;
-  height: 48px;
-  border-radius: 50%;
-  left: 0;
-  line-height: 48px;
-  background: #662d91;
-  text-align: center;
-}
-
 .services {
   background: #0f0f0f;
+}
+
+.services .wrapper {
+  padding: 192px 10px;
+}
+
+.services__desc {
+  margin-top: 30px;
+  width: 99%;
 }
 
 .services__coll {
@@ -428,49 +573,5 @@
   color: rgba(255, 255, 255, 0.631);
   line-height: 1.636;
   text-align: center;
-}
-
-.common__title {
-  font-size: 18px;
-  font-family: "Montserrat", sans-serif;
-  color: #793ea5;
-  font-weight: bold;
-  text-transform: uppercase;
-  margin: 0;
-}
-
-.common__desc {
-  font-size: 46px;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-weight: bold;
-  line-height: 1.5;
-}
-
-.common__subdesc {
-  font-size: 24px;
-  font-family: "NunitoSans", sans-serif;
-  color: rgba(255, 255, 255, 0.2);
-  line-height: 1.625;
-}
-
-.common__card_item {
-  width: 45%;
-}
-
-.common__card_title {
-  font-size: 24px;
-  font-family: "Montserrat", sans-serif;
-  color: white;
-  font-weight: bold;
-  line-height: 0.75;
-}
-
-.common__card_desc {
-  font-size: 17px;
-  font-family: "NunitoSans", sans-serif;
-  color: rgba(255, 255, 255, 0.4);
-  line-height: 1.941;
-  text-align: left;
 }
 /*# sourceMappingURL=main.css.map */

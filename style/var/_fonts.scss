@@ -1,17 +1,29 @@
 @mixin Font_set($size, $lh, $fn, $color: initial) {
-    font:$size $fn, sans-serif;
+    font: $size $fn, sans-serif;
     line-height: $lh;
     color: $color;
 
-    @if $fn == 'NunitoSans-light'{
+    @if $fn=='NunitoSans-light' {
         font-weight: 100;
     }
-    
-    @if $fn == 'NunitoSans-bold'{
+
+    @else if $fn=='NunitoSans' {
+        font-weight: 400;
+    }
+
+    @else if $fn=='NunitoSans-bold' {
         font-weight: 900;
     }
 
-    @if $fn == 'Montserrat-bold'{
+    @else if $fn=='Montserrat-Medium' {
+        font-weight: 500;
+    }
+
+    @else if $fn=='Montserrat-SemiBold' {
+        font-weight: 600;
+    }
+
+    @else if $fn=='Montserrat-bold' {
         font-weight: 900;
     }
 }
@@ -22,11 +34,26 @@
 }
 
 @font-face {
+    font-family: 'NunitoSans';
+    src: url(./../../res/fonts/Nunito_Sans/NunitoSans-Regular.ttf);
+}
+
+@font-face {
     font-family: 'NunitoSans-bold';
     src: url(./../../res/fonts/Nunito_Sans/NunitoSans-Bold.ttf);
 }
 
 @font-face {
+    font-family: 'Montserrat-Medium';
+    src: url(./../../res/fonts/Montserrat/Montserrat-Medium.ttf);
+}
+
+@font-face {
     font-family: 'Montserrat-bold';
     src: url(./../../res/fonts/Montserrat/Montserrat-Bold.ttf);
+}
+
+@font-face {
+    font-family: 'Montserrat-SemiBold';
+    src: url(./../../res/fonts/Montserrat/Montserrat-SemiBold.ttf);
 }
