@@ -133,6 +133,37 @@
     &__coll {
         flex-direction: row;
         flex-wrap: wrap;
+
+        &:nth-child(1) {
+            // .about__coll_title::before{
+            //     content: '123';
+            // }
+            border: 1px solid red;
+        }
+
+        @for $i from 1 through 4 {
+            &_item:nth-child(#{$i}) .about__coll_title {
+                &::before {
+                    content: '#{$i}';
+                }
+            }
+        }
+
+        &_title {
+            position: relative;
+            padding-left: 72px;
+
+            &::before {
+                position: absolute;
+                width: 48px;
+                height: 48px;
+                border-radius: 50%;
+                left: 0;
+                line-height: 48px;
+                background: #662d91;
+                text-align: center;
+            }
+        }
     }
 }
 

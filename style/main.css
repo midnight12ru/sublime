@@ -180,6 +180,42 @@
       flex-wrap: wrap;
 }
 
+.about__coll:nth-child(1) {
+  border: 1px solid red;
+}
+
+.about__coll_item:nth-child(1) .about__coll_title::before {
+  content: "1";
+}
+
+.about__coll_item:nth-child(2) .about__coll_title::before {
+  content: "2";
+}
+
+.about__coll_item:nth-child(3) .about__coll_title::before {
+  content: "3";
+}
+
+.about__coll_item:nth-child(4) .about__coll_title::before {
+  content: "4";
+}
+
+.about__coll_title {
+  position: relative;
+  padding-left: 72px;
+}
+
+.about__coll_title::before {
+  position: absolute;
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  left: 0;
+  line-height: 48px;
+  background: #662d91;
+  text-align: center;
+}
+
 .services {
   background: #0f0f0f;
 }
