@@ -55,7 +55,6 @@
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
-  padding: 0 91px 0 76px;
   height: 107px;
   position: absolute;
   width: 100%;
@@ -66,6 +65,7 @@
   background-size: cover;
   width: 153px;
   height: 36px;
+  margin-left: 76px;
 }
 
 .header__menu-icon {
@@ -73,6 +73,7 @@
   height: 20px;
   -webkit-transform: translateY(20px);
           transform: translateY(20px);
+  margin-right: 91px;
 }
 
 .header__menu-icon span {
@@ -89,9 +90,10 @@
 }
 
 .header__title {
-  font: 900 170px "Montserrat-bold", sans-serif;
+  font: 170px "Montserrat-bold", sans-serif;
   line-height: 1;
   color: #fff;
+  font-weight: 900;
   text-transform: capitalize;
   text-align: center;
   letter-spacing: -3.1px;
@@ -99,9 +101,10 @@
 }
 
 .header__subtitle {
-  font: 100 37px "NunitoSans-light", sans-serif;
+  font: 37px "NunitoSans-light", sans-serif;
   line-height: 1.297;
   color: #9c9c9c;
+  font-weight: 100;
   margin: 0 0 60px 0;
   padding-left: 9px;
 }
@@ -132,9 +135,10 @@
 }
 
 .header__video_text {
-  font: 900 14px "NunitoSans-bold", sans-serif;
+  font: 14px "NunitoSans-bold", sans-serif;
   line-height: 17px;
   color: #9c9c9c;
+  font-weight: 900;
   letter-spacing: 4px;
   text-transform: uppercase;
 }
@@ -150,9 +154,12 @@
   background-color: #13161b;
   width: 298px;
   height: 72px;
-  font: 900 12px "NunitoSans-bold", sans-serif;
+  letter-spacing: 3.5px;
+  cursor: pointer;
+  font: 12px "NunitoSans-bold", sans-serif;
   line-height: initial;
   color: #fff;
+  font-weight: 900;
   text-transform: uppercase;
 }
 

@@ -1,7 +1,19 @@
-@mixin Font_set($fw, $size, $lh, $fn, $color: initial) {
-    font: $fw $size $fn, sans-serif;
+@mixin Font_set($size, $lh, $fn, $color: initial) {
+    font:$size $fn, sans-serif;
     line-height: $lh;
     color: $color;
+
+    @if $fn == 'NunitoSans-light'{
+        font-weight: 100;
+    }
+    
+    @if $fn == 'NunitoSans-bold'{
+        font-weight: 900;
+    }
+
+    @if $fn == 'Montserrat-bold'{
+        font-weight: 900;
+    }
 }
 
 @font-face {
