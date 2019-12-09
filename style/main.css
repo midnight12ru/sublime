@@ -357,7 +357,7 @@
 }
 
 .services .wrapper {
-  padding: 192px 10px;
+  padding: 192px 10px 200px 10px;
 }
 
 .services__desc {
@@ -372,6 +372,23 @@
           flex-direction: row;
   -ms-flex-wrap: wrap;
       flex-wrap: wrap;
+  margin-top: 115px;
+}
+
+.services__coll_item {
+  width: 50%;
+  max-width: 500px;
+  padding-left: 83px;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+}
+
+.services__coll_item:nth-child(2n + 1) {
+  margin-left: -10.5px;
+}
+
+.services__coll_desc {
+  margin-bottom: 12px;
 }
 
 .works {
