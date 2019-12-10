@@ -5,8 +5,6 @@
     display: none;
 }
 
-
-
 .wrapper {
     width: 100%;
     max-width: 1080px;
@@ -248,12 +246,26 @@
             max-width: 500px;
             padding-left: 83px;
             box-sizing: border-box;
-            &:nth-child(2n + 1){
+
+            &:nth-child(2n + 1) {
                 margin-left: -10.5px;
+            }
+
+        }
+
+        @each $icon in uiux,
+        star,
+        illustration,
+        frontend,
+        marketing,
+        photography {
+            .#{$icon}-icon {
+                background: url('./../res/img/#{$icon}_serv.png') no-repeat 11px 20px;
             }
         }
 
-        &_desc{
+        // uiux star illustration frontend marketing photography
+        &_desc {
             margin-bottom: 12px;
         }
     }
@@ -263,60 +275,81 @@
     background-color: #121212;
     background: url(./../res/img/works-bg.png) no-repeat left center;
     background-size: cover;
-}
+    text-align: center;
 
-.gallery {
-    column-count: 2;
-    column-gap: 0;
-
-    &__item {
-        position: relative;
-        overflow: hidden;
-
-        &:hover .gallery__content {
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background: rgba(0, 0, 0, .5);
-            color: #fff;
-        }
-
-    }
-
-    &__img {
-        width: 100%;
-        display: block;
-    }
-
-    &__content {
-        align-items: baseline;
-        position: absolute;
-        padding: 0 24px 24px;
-        box-sizing: border-box;
-        transition: .3s all;
-    }
-
-    &__name,
-    &__subname {
-        margin: 0;
-    }
-
-    &__link {
-        background: url(./../res/img/card-link.png) no-repeat center;
-        display: block;
-        width: 44px;
-        height: 76px;
-        border-radius: 0 0 22px 22px;
+    .wrapper {
+        padding-top: 184px;
+        padding-bottom: 198px;
     }
 
     &__desc {
-        flex: 1;
-        display: flex;
-        align-items: center;
-        width: 100%;
-        justify-content: center;
+        width: 95%;
+        margin: 0 auto;
+        margin-top: 30px;
+        margin-bottom: 135px;
+    }
+
+    &__gallery {
+        width: 102%;
+        position: relative;
+        transform: translateX(-1%);
+    }
+
+    .gallery {
+        column-count: 2;
+        column-gap: 0;
+
+        &__item {
+            position: relative;
+            overflow: hidden;
+
+            &:hover .gallery__content {
+                top: 0;
+                width: 100%;
+                height: 100%;
+                background: rgba(0, 0, 0, .5);
+                color: #fff;
+            }
+
+        }
+
+        &__img {
+            width: 100%;
+            display: block;
+        }
+
+        &__content {
+            align-items: baseline;
+            position: absolute;
+            padding: 0 24px 24px;
+            box-sizing: border-box;
+            transition: .3s all;
+        }
+
+        &__name,
+        &__subname {
+            margin: 0;
+        }
+
+        &__link {
+            background: url(./../res/img/card-link.png) no-repeat center;
+            display: block;
+            width: 44px;
+            height: 76px;
+            border-radius: 0 0 22px 22px;
+        }
+
+        &__desc {
+            flex: 1;
+            display: flex;
+            align-items: center;
+            width: 100%;
+            justify-content: center;
+        }
     }
 }
+
+
 
 .client {
     background: #0f0f0f;
