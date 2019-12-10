@@ -512,6 +512,18 @@
 
 .client .wrapper {
   text-align: center;
+  padding-top: 163px;
+  padding-bottom: 178px;
+}
+
+.client__title {
+  padding-right: 10px;
+}
+
+.client__desc {
+  margin-top: 30px;
+  padding-right: 10px;
+  margin-bottom: 109px;
 }
 
 .client__list {
@@ -524,11 +536,11 @@
 }
 
 .client span {
-  font-size: 45px;
-  font-family: "NunitoSans", sans-serif;
-  color: rgba(255, 255, 255, 0.302);
-  font-weight: bold;
+  font: 45px "NunitoSans-bold", sans-serif;
   line-height: 1.933;
+  color: #ffffff4d;
+  font-weight: 900;
+  padding: 0 13px;
 }
 
 .testimonials {
@@ -537,14 +549,15 @@
 }
 
 .testimonials__quote {
-  margin: 0;
-  font-size: 36px;
-  font-family: "NunitoSans", sans-serif;
-  color: white;
+  margin: 0 auto;
+  font: 36px "NunitoSans", sans-serif;
   line-height: 1.667;
+  color: #fff;
+  font-weight: 400;
   text-align: center;
   position: relative;
-  padding-top: 100px;
+  padding-top: 79px;
+  width: 95%;
 }
 
 .testimonials__quote::before {
@@ -559,23 +572,31 @@
   height: 30px;
 }
 
+.testimonials__list {
+  margin: 0;
+  padding: 155px 0 206px 0px;
+}
+
 .testimonials__name {
+  margin-top: 22px;
+  letter-spacing: 3px;
+  margin-bottom: -6px;
   text-align: center;
-  font-size: 15px;
-  font-family: "NunitoSans", sans-serif;
-  color: #5e3080;
-  text-transform: uppercase;
+  font: 15px "NunitoSans", sans-serif;
   line-height: 2.002;
+  color: #5e3080;
+  font-weight: 400;
+  text-transform: uppercase;
   -webkit-transform: matrix(1.0, 0, 0, 1.00081, 0, 0);
   transform: matrix(1.0, 0, 0, 1.00081, 0, 0);
 }
 
 .testimonials__position {
-  text-align: center;
-  font-size: 15px;
-  font-family: "NunitoSans", sans-serif;
-  color: rgba(153, 153, 153, 0.502);
+  font: 15px "NunitoSans", sans-serif;
   line-height: 2;
+  color: #99999980;
+  font-weight: 400;
+  text-align: center;
   -webkit-transform: matrix(1.0, 0, 0, 1.00081, 0, 0);
   transform: matrix(1.0, 0, 0, 1.00081, 0, 0);
   margin: 0;
@@ -583,9 +604,15 @@
 
 .contact {
   background-color: #5e3080;
+  padding: 163px 0 0 0;
+}
+
+.contact .wrapper {
+  text-align: center;
 }
 
 .contact__title {
+  letter-spacing: 3px;
   margin: 0;
   font-size: 18px;
   font-family: "Montserrat", sans-serif;
@@ -599,7 +626,9 @@
 }
 
 .contact__desc {
-  margin: 0;
+  width: 74%;
+  margin: 30px auto;
+  letter-spacing: 1.7px;
   font-size: 46px;
   font-family: "Montserrat", sans-serif;
   color: white;
@@ -611,28 +640,22 @@
 }
 
 .contact__mail {
-  font-size: 90px;
-  font-family: "NunitoSans", sans-serif;
-  color: white;
-  font-weight: bold;
+  font: 90px "NunitoSans-bold", sans-serif;
   line-height: 1;
+  color: #fff;
+  font-weight: 900;
   text-align: center;
   text-decoration: none;
+  margin: 143px auto 48px;
+  display: block;
+  letter-spacing: 1px;
 }
 
-.contact__addr {
-  font-size: 33px;
-  font-family: "NunitoSans", sans-serif;
-  color: rgba(255, 255, 255, 0.631);
+.contact__addr, .contact__tel {
+  font: 33px "NunitoSans", sans-serif;
   line-height: 1.636;
-  text-align: center;
-}
-
-.contact__tel {
-  font-size: 33px;
-  font-family: "NunitoSans", sans-serif;
-  color: rgba(255, 255, 255, 0.631);
-  line-height: 1.636;
+  color: #ffffffa1;
+  font-weight: 400;
   text-align: center;
 }
 /*# sourceMappingURL=main.css.map */

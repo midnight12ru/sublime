@@ -349,13 +349,23 @@
     }
 }
 
-
-
 .client {
     background: #0f0f0f;
 
     .wrapper {
         text-align: center;
+        padding-top: 163px;
+        padding-bottom: 178px;
+    }
+
+    &__title {
+        padding-right: 10px;
+    }
+
+    &__desc {
+        margin-top: 30px;
+        padding-right: 10px;
+        margin-bottom: 109px;
     }
 
     &__list {
@@ -364,11 +374,8 @@
     }
 
     span {
-        font-size: 45px;
-        font-family: "NunitoSans", sans-serif;
-        color: rgba(255, 255, 255, 0.302);
-        font-weight: bold;
-        line-height: 1.933;
+        @include Font_set(45px, 1.933, 'NunitoSans-bold', #ffffff4d);
+        padding: 0 13px;
     }
 }
 
@@ -377,14 +384,12 @@
     background-size: cover;
 
     &__quote {
-        margin: 0;
-        font-size: 36px;
-        font-family: "NunitoSans", sans-serif;
-        color: rgb(255, 255, 255);
-        line-height: 1.667;
+        margin: 0 auto;
+        @include Font_set(36px, 1.667, 'NunitoSans', #fff);
         text-align: center;
         position: relative;
-        padding-top: 100px;
+        padding-top: 79px;
+        width: 95%;
 
         &::before {
             content: '';
@@ -398,13 +403,19 @@
         }
     }
 
+    &__list {
+        margin: 0;
+        padding: 155px 0 206px 0px;
+    }
+
     &__name {
+        margin-top: 22px;
+        letter-spacing: 3px;
+        margin-bottom: -6px;
         text-align: center;
-        font-size: 15px;
-        font-family: "NunitoSans", sans-serif;
-        color: rgb(94, 48, 128);
+
+        @include Font_set(15px, 2.002, 'NunitoSans', #5e3080);
         text-transform: uppercase;
-        line-height: 2.002;
         -moz-transform: matrix(1.00000101376989, 0, 0, 1.00080701431026, 0, 0);
         -webkit-transform: matrix(1.00000101376989, 0, 0, 1.00080701431026, 0, 0);
         -ms-transform: matrix(1.00000101376989, 0, 0, 1.00080701431026, 0, 0);
@@ -412,11 +423,8 @@
     }
 
     &__position {
+        @include Font_set(15px, 2, 'NunitoSans', #99999980);
         text-align: center;
-        font-size: 15px;
-        font-family: "NunitoSans", sans-serif;
-        color: rgba(153, 153, 153, 0.502);
-        line-height: 2;
         -moz-transform: matrix(1.00000101376989, 0, 0, 1.00080701431026, 0, 0);
         -webkit-transform: matrix(1.00000101376989, 0, 0, 1.00080701431026, 0, 0);
         -ms-transform: matrix(1.00000101376989, 0, 0, 1.00080701431026, 0, 0);
@@ -427,8 +435,14 @@
 
 .contact {
     background-color: #5e3080;
+    padding: 163px 0 0 0;
+
+    .wrapper {
+        text-align: center;
+    }
 
     &__title {
+        letter-spacing: 3px;
         margin: 0;
         font-size: 18px;
         font-family: "Montserrat", sans-serif;
@@ -444,7 +458,9 @@
     }
 
     &__desc {
-        margin: 0;
+        width: 74%;
+        margin: 30px auto;
+        letter-spacing: 1.7px;
         font-size: 46px;
         font-family: "Montserrat", sans-serif;
         color: rgb(255, 255, 255);
@@ -458,28 +474,17 @@
     }
 
     &__mail {
-        font-size: 90px;
-        font-family: "NunitoSans", sans-serif;
-        color: rgb(255, 255, 255);
-        font-weight: bold;
-        line-height: 1;
+        @include Font_set(90px, 1, 'NunitoSans-bold', #fff);
         text-align: center;
         text-decoration: none;
+        margin: 143px auto 48px;
+        display: block;
+        letter-spacing: 1px;
     }
 
-    &__addr {
-        font-size: 33px;
-        font-family: "NunitoSans", sans-serif;
-        color: rgba(255, 255, 255, 0.631);
-        line-height: 1.636;
-        text-align: center;
-    }
-
+    &__addr,
     &__tel {
-        font-size: 33px;
-        font-family: "NunitoSans", sans-serif;
-        color: rgba(255, 255, 255, 0.631);
-        line-height: 1.636;
+        @include Font_set(33px, 1.636, 'NunitoSans', #ffffffa1);
         text-align: center;
     }
 }
