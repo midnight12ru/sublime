@@ -1,0 +1,45 @@
+.header__top {
+  height: 50px;
+}
+
+.header__logo {
+  margin-left: 15px;
+}
+
+.header__menu-icon {
+  margin-right: 15px;
+  -webkit-transform: initial;
+          transform: initial;
+}
+
+.header__video {
+  display: none;
+}
+
+.header__title {
+  font-size: 85px;
+}
+
+.header__subtitle {
+  margin: 0;
+  font-size: 18.5px;
+  text-align: center;
+}
+
+.header__btn {
+  margin-bottom: 15px;
+}
+
+.header__btn button {
+  width: 170px;
+  height: 40px;
+}
+
+.header__soc-icon {
+  display: none;
+}
+
+.header__scroll {
+  display: none;
+}
+/*# sourceMappingURL=response480px.css.map */

@@ -1,0 +1,47 @@
+.header {
+    &__top {
+        height: 50px;
+    }
+
+    &__logo {
+        margin-left: 15px;
+    }
+
+    &__menu-icon {
+        margin-right: 15px;
+        transform: initial;
+    }
+
+    &__video {
+        display: none;
+    }
+
+    &__title {
+        font-size: 85px;
+    }
+
+    &__subtitle {
+        margin: 0;
+        font-size: 18.5px;
+        text-align: center;
+    }
+
+    &__btn {
+        margin-bottom: 15px;
+
+        button {
+            width: 170px;
+            height: 40px;
+        }
+    }
+
+    &__soc {
+        &-icon {
+            display: none;
+        }
+    }
+
+    &__scroll {
+        display: none;
+    }
+}
